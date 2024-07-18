@@ -1,1 +1,1 @@
-# Bellande Operating System Package Manager
+# Bellande Operating System Package Manager (BOSPM)
