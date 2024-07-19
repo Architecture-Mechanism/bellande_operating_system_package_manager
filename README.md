@@ -1,5 +1,4 @@
 # Bellande Operating System Package Manager (BOSPM)
-<<<<<<< HEAD
 - BOSPM Stands for Bellande Operating System Package Manager
 
 ## BellandeOS
@@ -28,7 +27,3 @@ After installation, you can use bospm commands directly from the terminal:
 
 ## Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
-=======
-
-## BellandeOS
->>>>>>> 317ba9397b68a6cb8ca70f3486cee02c98cb5f83
