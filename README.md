@@ -1,6 +1,9 @@
 # Bellande Operating System Package Manager (BOSPM)
 - BOSPM Stands for Bellande Operating System Package Manager
 
+## BOSPM
+[![Bellande's Package](https://img.shields.io/badge/Bellande's%20Package-BOSPM-blue?style=for-the-badge&logo=python&color=blue)](https://pypi.org/project/bospm)
+
 ## BellandeOS
 - BOSPM is a cross-platform package manager built entirely in Python. It works on Windows, macOS, Linux, and BellandeOS without relying on any external package managers
 
