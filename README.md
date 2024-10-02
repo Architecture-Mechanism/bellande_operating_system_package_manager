@@ -9,7 +9,7 @@
 
 ## Repository
 
-The BOSPM project is hosted on GitHub: [https://github.com/Algorithm-Model-Research/bellande_operating_system_package_manager](https://github.com/Algorithm-Model-Research/bellande_operating_system_package_manager)
+The BOSPM project is hosted on GitHub: [https://github.com/Algorithm-Model-Research/bellande_operating_system_package_manager](https://github.com/Architecture-Mechanism/bellande_operating_system_package_manager)
 
 
 ## BOSPM Terminal Commands Usage
@@ -30,3 +30,6 @@ After installation, you can use bospm commands directly from the terminal:
 
 ## Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+Bellande Operating System Package Manager is distributed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html), see [LICENSE](https://github.com/Architecture-Mechanism/bellande_operating_system_package_manager/blob/main/LICENSE) and [NOTICE](https://github.com/Architecture-Mechanism/bellande_operating_system_package_manager/blob/main/LICENSE) for more information.
