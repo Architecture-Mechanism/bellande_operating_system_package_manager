@@ -1,12 +1,15 @@
 # Bellande Operating System Package Manager (BOSPM)
 - BOSPM Stands for Bellande Operating System Package Manager
 
+## BOSPM
+[![Bellande's Package](https://img.shields.io/badge/Bellande's%20Package-BOSPM-blue?style=for-the-badge&logo=python&color=blue)](https://pypi.org/project/bospm)
+
 ## BellandeOS
 - BOSPM is a cross-platform package manager built entirely in Python. It works on Windows, macOS, Linux, and BellandeOS without relying on any external package managers
 
 ## Repository
 
-The BOSPM project is hosted on GitHub: [https://github.com/Algorithm-Model-Research/bellande_operating_system_package_manager](https://github.com/Algorithm-Model-Research/bellande_operating_system_package_manager)
+The BOSPM project is hosted on GitHub: [https://github.com/Architecture-Mechanism/bellande_operating_system_package_manager](https://github.com/Architecture-Mechanism/bellande_operating_system_package_manager)
 
 
 ## BOSPM Terminal Commands Usage
@@ -27,3 +30,6 @@ After installation, you can use bospm commands directly from the terminal:
 
 ## Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+(BOSPM) Bellande Operating System Package Manager is distributed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html), see [LICENSE](https://github.com/Architecture-Mechanism/bellande_operating_system_package_manager/blob/main/LICENSE) and [NOTICE](https://github.com/Architecture-Mechanism/bellande_operating_system_package_manager/blob/main/LICENSE) for more information.
