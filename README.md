@@ -1,6 +1,10 @@
 # Bellande Operating System Package Manager (BOSPM)
 - BOSPM Stands for Bellande Operating System Package Manager
 
+## Install pip with sudo or bell
+- `sudo pip install bospm`
+- `bell pip install bospm`
+
 ## BOSPM
 [![Bellande's Package](https://img.shields.io/badge/Bellande's%20Package-BOSPM-blue?style=for-the-badge&logo=python&color=blue)](https://pypi.org/project/bospm)
 
@@ -21,9 +25,6 @@ After installation, you can use bospm commands directly from the terminal:
 - bospm list                                                                               List installed packages
 - bospm available [--source <github|website>]                                              List available packages
 - bospm update <package_name> [<version>] [--os <os>] [--arch <arch>]                      Update a package
-
-### Installation
-- `$ pip install bospm`
 
 ### Upgrade (if not upgraded)
 - `$ pip install --upgrade bospm`
