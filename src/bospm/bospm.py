@@ -34,8 +34,8 @@ REPO_DIR = os.path.join(CONFIG_DIR, 'repo')
 INSTALL_DIR = os.path.join(CONFIG_DIR, 'installed')
 
 # Repository and website URLs
-GITHUB_REPO = "https://github.com/Algorithm-Model-Research/bellande_operating_system_package"
-TEMP_WEBSITE = "https://example.com/bospm_packages"  # Temporary website URL
+GITHUB_REPO = "https://github.com/Architecture-Mechanism/bellande_operating_system_package"
+TEMP_WEBSITE = "https://bellande-architecture-mechanism-research-innovation-center.org/bospm_packages"  # Temporary website URL
 
 def ensure_dirs():
     for dir in [CONFIG_DIR, PACKAGE_DIR, REPO_DIR, INSTALL_DIR]:

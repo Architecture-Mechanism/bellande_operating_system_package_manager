@@ -1,5 +1,3 @@
 publish.sh
-setup_publish_env.sh
-bospm_publish_env
-MANIFEST
 dist
+build
