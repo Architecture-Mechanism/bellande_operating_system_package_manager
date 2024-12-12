@@ -12,8 +12,9 @@
 - BOSPM is a cross-platform package manager built entirely in Python. It works on Windows, macOS, Linux, and BellandeOS without relying on any external package managers
 
 ## Repository
-
-The BOSPM project is hosted on GitHub: [https://github.com/Architecture-Mechanism/bellande_operating_system_package_manager](https://github.com/Architecture-Mechanism/bellande_operating_system_package_manager)
+**The BOSPM project is hosted on Bellande Technologies Git and Github**
+- The BOSPM project hosted on Bellande Technologies Git: [https://git.bellande-technologies.com/BAMRI/bellande_operating_system_package_manager](https://git.bellande-technologies.com/BAMRI/bellande_operating_system_package_manager)
+- The BOSPM project hosted on GitHub: [https://github.com/Architecture-Mechanism/bellande_operating_system_package_manager](https://github.com/Architecture-Mechanism/bellande_operating_system_package_manager)
 
 
 ## BOSPM Terminal Commands Usage
