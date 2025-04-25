@@ -1,0 +1,17 @@
+[Unit]
+Description=Bellande Operating System Package Manager Service
+Documentation=https://bellande-technologies.com/bospm
+After=network.target
+
+[Service]
+Type=forking
+User=root
+Group=root
+ExecStart=/usr/bin/bospm_service start
+ExecStop=/usr/bin/bospm_service stop
+PIDFile=/root/.bospm/bospm_service.pid
+Restart=on-failure
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target

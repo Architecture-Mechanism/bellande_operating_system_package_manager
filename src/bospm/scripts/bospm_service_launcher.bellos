@@ -1,0 +1,65 @@
+# Copyright (C) 2025 Bellande Algorithm Model Research Innovation Center, Ronaldson Bellande
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+#!/bin/bash
+
+# Launcher script for the BOSPM service
+# This script should be placed in /usr/bin/bospm_service
+
+# Get the directory where the script is located
+SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
+
+# Path to the Python implementation
+BOSPM_PYTHON="/usr/lib/bospm/bospm_service.py"
+
+# Check if running on BellandeOS
+if [ -f "/etc/bellande-release" ]; then
+    # BellandeOS specific
+    PYTHON_CMD="/usr/bin/python3"
+    # Check if we need bell
+    if [ "$EUID" -ne 0 ]; then
+        if [ "$1" = "start" ] || [ "$1" = "stop" ] || [ "$1" = "status" ]; then
+            exec bell "$0" "$@"
+            exit $?
+        fi
+    fi
+# Check for macOS
+elif [ "$(uname)" = "Darwin" ]; then
+    # macOS specific
+    PYTHON_CMD="/usr/bin/python3"
+    # Check if running as root for certain commands
+    if [ "$EUID" -ne 0 ]; then
+        if [ "$1" = "start" ] || [ "$1" = "stop" ] || [ "$1" = "status" ]; then
+            exec sudo "$0" "$@"
+            exit $?
+        fi
+    fi
+# Check for Windows (WSL)
+elif [ -n "$WINDIR" ] || [ -n "$windir" ] || grep -q "Microsoft" /proc/version 2>/dev/null; then
+    # Windows/WSL specific
+    PYTHON_CMD="python"
+# Default to Linux
+else
+  # Linux specific
+  PYTHON_CMD="/usr/bin/python3"
+  # Check if we need sudo
+  if [ "$EUID" -ne 0 ]; then
+      if [ "$1" = "start" ] || [ "$1" = "stop" ] || [ "$1" = "status" ]; then
+          exec sudo "$0" "$@"
+          exit $?
+      fi
+  fi
+fi
+
